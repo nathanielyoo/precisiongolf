@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Precision Golf</title>
+        <link rel="stylesheet" href="grip-quiz.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+
+        <nav>
+            <div class="navbar">
+                <i class="bx bx-menu"></i>
+                <div class="logo"><a href="index.html"><img src="https://cdn.discordapp.com/attachments/840588879001288795/955891785022992434/precisiongolf.png" alt="Precision Golf" class="img-logo"></a></div>
+                <div class="nav-buttons">
+                    <div class="nav-menu">
+                        <span class="menu">Menu</span>
+                        <i class="bx bx-x-circle"></i>
+                    </div>
+                    <ul class="buttons">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="fundamentals.html">Fundamentals</a>
+                            <i class="bx bx-chevrons-right fundamentals-arrow nav-arrow"></i>
+                            <ul class="fundamentals-sub sub-menu">
+                                <li class="golf-swing">
+                                    <a href="#">Pre-Swing</a>
+                                    <i class="bx bx-chevrons-right right-arrow"></i>
+                                    <ul class="swing-sub sub-menu">
+                                        <li><a href="grip.html">Grip</a></li>
+                                        <li><a href="#">Alignment</a></li>
+                                        <li><a href="#">Position</a></li>
+                                        <li><a href="#">Posture</a></li>
+                                    </ul>
+                                </li>
+                                <li class="golf-swing">
+                                    <a href="#">Golf Swing</a>
+                                    <i class="bx bx-chevrons-right right-arrow"></i>
+                                    <ul class="swing-sub sub-menu">
+                                        <li><a href="#">Backswing</a></li>
+                                        <li><a href="#">Downswing</a></li>
+                                        <li><a href="#">Impact</a></li>
+                                        <li><a href="#">Follow Through</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">The Finish</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Short Game</a>
+                            <i class="bx bx-chevrons-right short-game-arrow nav-arrow"></i>
+                            <ul class="shortgame-sub sub-menu">
+                                <li><a href="#">Pitching</a></li>
+                                <li class="short-game">
+                                    <a href="#">Chipping</a>
+                                    <i class="bx bx-chevrons-right right-arrow"></i>
+                                    <ul class="short-sub sub-menu">
+                                        <li><a href="#">Bump & Run</a></li>
+                                        <li><a href="#">Flop Shot</a></li>
+                                        <li><a href="#">Irons</a></li>
+                                        <li><a href="#">Fairway Wood</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Bunker Shots</a></li>
+                                <li class="short-game">
+                                    <a href="#">Putting</a>
+                                    <i class="bx bx-chevrons-right right-arrow"></i>
+                                    <ul class="short-sub sub-menu">
+                                        <li><a href="#">Posture</a></li>
+                                        <li><a href="#">Grip</a></li>
+                                        <li><a href="#">Reading Greens</a></li>
+                                        <li><a href="#">The Stroke</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Advanced</a>
+                            <i class="bx bx-chevrons-right advanced-arrow nav-arrow"></i>
+                            <ul class="advanced-sub sub-menu">
+                                <li class="advanced">
+                                    <a href="#">On the Course</a>
+                                    <i class="bx bx-chevrons-right right-arrow"></i>
+                                    <ul class="advcd-sub sub-menu">
+                                        <li><a href="#">Windy Conditions</a></li>
+                                        <li><a href="#">Course Management</a></li>
+                                        <li><a href="#">Fairway Bunkers</a></li>
+                                        <li><a href="#">General Tips</a></li>
+                                        <li><a href="#">Rules</a></li>
+                                    </ul>
+                                </li>
+                                <li class="advanced">
+                                    <a href="#">Shot Shaping</a>
+                                    <i class="bx bx-chevrons-right right-arrow"></i>
+                                    <ul class="advcd-sub sub-menu">
+                                        <li><a href="#">Draw</a></li>
+                                        <li><a href="#">Fade</a></li>
+                                    </ul>
+                                </li>
+                                <li class="advanced">
+                                    <a href="#">Tough Lies</a>
+                                    <i class="bx bx-chevrons-right right-arrow"></i>
+                                    <ul class="advcd-sub sub-menu">
+                                        <li><a href="#">Below the Feet</a></li>
+                                        <li><a href="#">Above the Feet</a></li>
+                                        <li><a href="#">Heavy Rough</a></li>
+                                        <li><a href="#">In a Divot</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="golf-course">
+            <img src="https://cdn.discordapp.com/attachments/840588879001288795/958893942533947432/golf-course.jpg" class="quiz-title-image">
+        </div>
+
+        <div class="quiz-title-div">
+            <p class="quiz-title">The Golf Grip</p>
+            <p class="quiz-description">Test your knowledge of <span style="font-weight: 600">the golf grip</span> with this quiz.</p>
+        </div>
+
+        <hr class="divider">
+
+        <p class="heading">1. Select the image with a <span>neutral grip</span>.</p>
+
+        <div class="question-one">
+            <div class="question-one-option-one">
+                <input type="radio" name="q1" value="0" class="hidden" id="grip1">
+                <label for="grip1">
+                    <img src="https://cdn.discordapp.com/attachments/828982740358529024/958847859644575784/weak.jpg" alt="Grip 1" class="one-grip">
+                </label>
+            </div>
+
+            <div class="question-one-option-two">
+                <input type="radio" name="q1" value="0" class="hidden" id="grip2">
+                <label for="grip2">
+                    <img src="https://cdn.discordapp.com/attachments/828982740358529024/958847859170627584/strong.jpg" alt="Grip 2" class="one-grip">
+                </label>
+            </div>
+
+            <div class="question-one-option-three">
+                <input type="radio" name="q1" value="1" class="hidden" id="grip3">
+                <label for="grip3">
+                    <img src="https://cdn.discordapp.com/attachments/828982740358529024/958847859380330516/neutral.jpg" alt="Grip 3" class="one-grip">
+                </label>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p class="heading">2. How <span>important</span> is the golf grip?</p>
+
+        <div class="question-two">
+            <div class="question-two-option-one radios">
+                <input type="radio" name="q2" value="1" id="grip4">
+                <label for="grip4">
+                    Very important, it is vital
+                </label>
+            </div>
+
+            <div class="question-two-option-two radios">
+                <input type="radio" name="q2" value="0" id="grip5">
+                <label for="grip5">
+                    A little important, a good grip is not essential
+                </label>
+            </div>
+
+            <div class="question-two-option-three radios">
+                <input type="radio" name="q2" value="0" id="grip6">
+                <label for="grip6">
+                    Not important, a trivial aspect of the golf grip
+                </label>
+            </div>
+
+            <div class="question-two-option-four radios">
+                <input type="radio" name="q2" value="0" id="grip7">
+                <label for="grip7">
+                    Useless, it is impractical
+                </label>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p class="heading">3. Why is the golf grip <span>important</span>?</p>
+
+        <div class="question-three">
+            <div class="question-three-option-one radios">
+                <input type="radio" name="q3" value="0" id="grip8">
+                <label for="grip8">
+                    It is not important at all.
+                </label>
+            </div>
+
+            <div class="question-three-option-two radios">
+                <input type="radio" name="q3" value="0" id="grip9">
+                <label for="grip9">
+                    It dictates the positioning of your feet and body.
+                </label>
+            </div>
+
+            <div class="question-three-option-three radios">
+                <input type="radio" name="q3" value="1" id="grip10">
+                <label for="grip10">
+                    It has an immense influence in the positioning and face of the golf club – more than any other body part.
+                </label>
+            </div>
+
+            <div class="question-three-option-four radios">
+                <input type="radio" name="q3" value="0" id="grip11">
+                <label for="grip11">
+                    It helps you eat.
+                </label>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p class="heading">4. What part of your <span>leading hand</span> does the grip ‘sit’ on?</p>
+
+        <div class="question-four">
+            <div class="question-four-option-one radios">
+                <input type="radio" name="q4" value="0" id="grip12">
+                <label for="grip12">
+                    Your fingers
+                </label>
+            </div>
+
+            <div class="question-four-option-two radios">
+                <input type="radio" name="q4" value="0" id="grip13">
+                <label for="grip13">
+                    Your palm
+                </label>
+            </div>
+
+            <div class="question-four-option-three radios">
+                <input type="radio" name="q4" value="1" id="grip14">
+                <label for="grip14">
+                    Partially on both your fingers and palm
+                </label>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p class="heading">5. How many <span>knuckles</span> on your lead hand should you see on the golf grip?</p>
+
+        <div class="question-five">
+            <div class="question-five-option-one radios">
+                <input type="radio" name="q5" value="0" id="grip15">
+                <label for="grip15">
+                    1
+                </label>
+            </div>
+
+            <div class="question-five-option-two radios">
+                <input type="radio" name="q5" value="0" id="grip16">
+                <label for="grip16">
+                    2
+                </label>
+            </div>
+
+            <div class="question-five-option-three radios">
+                <input type="radio" name="q5" value="1" id="grip17">
+                <label for="grip17">
+                    3
+                </label>
+            </div>
+
+            <div class="question-five-option-four radios">
+                <input type="radio" name="q5" value="0" id="grip18">
+                <label for="grip18">
+                    4
+                </label>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p class="heading">6. Where should the <span>lead hand ‘V’</span> point to?</p>
+
+        <div class="question-six">
+            <div class="question-six-option-one radios">
+                <input type="radio" name="q6" value="1" id="grip19">
+                <label for="grip19">
+                    Your trail shoulder
+                </label>
+            </div>
+
+            <div class="question-six-option-two radios">
+                <input type="radio" name="q6" value="0" id="grip20">
+                <label for="grip20">
+                    The top of your head
+                </label>
+            </div>
+
+            <div class="question-six-option-three radios">
+                <input type="radio" name="q6" value="0" id="grip21">
+                <label for="grip21">
+                    Your trail ear
+                </label>
+            </div>
+
+            <div class="question-six-option-four radios">
+                <input type="radio" name="q6" value="0" id="grip22">
+                <label for="grip22">
+                    Your lead shoulder
+                </label>
+            </div>
+        </div>
+
+        <hr class="divider">
+
+        <p class="heading">7. Where should the <span>trail hand ‘V’</span> point to?</p>
+
+        <div class="question-seven">
+            <div class="question-seven-option-one radios">
+                <input type="radio" name="q7" value="0" id="grip23">
+                <label for="grip23">
+                    Your belly button
+                </label>
+            </div>
+
+            <div class="question-seven-option-two radios">
+                <input type="radio" name="q7" value="0" id="grip24">
+                <label for="grip24">
+                    Your lead ear
+                </label>
+            </div>
+
+            <div class="question-seven-option-three radios">
+                <input type="radio" name="q7" value="0" id="grip25">
+                <label for="grip25">
+                    Your neck
+                </label>
+            </div>
+
+            <div class="question-seven-option-four radios">
+                <input type="radio" name="q7" value="1" id="grip26">
+                <label for="grip26">
+                    Your trail shoulder
+                </label>
+            </div>
+        </div>
+
+        <div class="submit-button">
+            <input type="submit" class="submit-btn" id="submit-button" onClick="quizSubmit()" value="Submit">
+        </div>
+
+        <p class="quizScore" id="score"></p>
+
+        <script src="grip-quiz.js"></script>
+
+    </body>
+</html>

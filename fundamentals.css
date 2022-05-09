@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+.buttons {
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0px 1.5px 2.5px #00000025;
+    background-color: #FFFFFF;
+    z-index: 50;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 50px;
+    height: 100%;
+}
+
+nav .navbar .logo img {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin: 5px;
+    height: auto;
+    width: 100px;
+}
+
+nav .navbar .nav-buttons {
+    line-height: 60px;
+    height: 100%;
+}
+
+nav .navbar .nav-buttons .buttons {
+    display: flex;
+}
+
+nav .navbar .nav-buttons .buttons li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    padding: 0px 14px;
+    height: 100%;
+}
+
+nav .navbar .nav-buttons .buttons li a {
+    text-decoration-line: none;
+    white-space: nowrap;
+    color: #37A1F7;
+    height: 100%;
+}
+
+nav .navbar .buttons .sub-menu {
+    background-color: #FFFFFF;
+    box-shadow: 0px 1.5px 2.5px #00000025;
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    line-height: 40px;
+    border-radius: 0px 0px 4px 4px;
+    display: none;
+}
+
+nav .navbar .buttons .sub-menu li {
+    border-bottom: 1.5px solid #FFFFFF50;
+    padding: 0px 12px;
+    left: -20px;
+}
+
+nav .navbar .buttons .sub-menu li a {
+    font-size: 14px;
+}
+
+.sub-menu li:hover .right-arrow {
+  transform: rotate(90deg);
+}
+
+nav .navbar .buttons .sub-menu li .right-arrow {
+    color: #37A1F7;
+    line-height: 40px;
+    transition: all 0.25s ease;
+}
+
+.navbar .nav-buttons .buttons li:hover .fundamentals-sub,
+.navbar .nav-buttons .buttons li:hover .shortgame-sub,
+.navbar .nav-buttons .buttons li:hover .advanced-sub {
+    display: block;
+}
+
+nav .navbar .buttons .golf-swing .swing-sub {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    border-radius: 0px 0px 4px 4px;
+    display: none;
+}
+
+nav .navbar .buttons .golf-swing:hover .swing-sub {
+    display: block;
+}
+
+nav .navbar .buttons .short-game .short-sub {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    border-radius: 0px 0px 4px 4px;
+    display: none;
+}
+
+nav .navbar .buttons .short-game:hover .short-sub {
+    display: block;
+}
+
+nav .navbar .buttons .advanced .advcd-sub {
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    border-radius: 0px 0px 4px 4px;
+    display: none;
+}
+
+nav .navbar .buttons .advanced:hover .advcd-sub {
+    display: block;
+}
+
+.navbar .bx-menu {
+    font-size: 25px;
+    padding-left: 0px;
+    color: #37A1F7;
+}
+
+.nav-buttons .nav-menu .menu,
+.nav-buttons .nav-menu .bx-x-circle,
+.navbar .bx-menu {
+    display: none;
+}
+
+nav .navbar .buttons li .nav-arrow {
+    color: #37A1F7;
+    display: none;
+    height: 100%;
+    width: 20px;
+    padding-left: 0px;
+    font-size: 16px;
+    text-align: center;
+}
+
+@media (max-width: 820px) {
+    nav .navbar .nav-buttons {
+        display: block;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        line-height: 40px;
+        padding: 18px;
+        max-width: 250px;
+        width: 100%;
+        background-color: #FFFFFF;
+        transition: all 0.4s ease;
+        box-shadow: 0px 1.5px 2.5px #00000030;
+    }
+
+    nav .navbar .nav-buttons .buttons {
+        display: block;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .nav-buttons .nav-menu .menu,
+    .nav-buttons .nav-menu .bx-x-circle,
+    .navbar .bx-menu {
+        display: block;
+    }
+
+    nav .navbar .nav-buttons .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .nav-buttons .nav-menu .menu{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        color: #37A1F7;
+    }
+
+    .nav-buttons .nav-menu .bx-x-circle {
+        font-size: 22px;
+        color: #37A1F7;
+    }
+
+    .navbar .nav-buttons .buttons .sub-menu {
+        position: relative;
+        top: 0px;
+        left: 0px;
+        box-shadow: none;
+        display: none;
+    }
+
+    .navbar .nav-buttons .buttons .sub-menu li {
+        border-bottom: none;
+    }
+
+    .navbar .nav-buttons .buttons li .fundamentals-sub,
+    .navbar .nav-buttons .buttons li .shortgame-sub,
+    .navbar .nav-buttons .buttons li .advanced-sub {
+        display: none;
+    }
+
+    .navbar .nav-buttons .buttons li:hover .fundamentals-sub,
+    .navbar .nav-buttons .buttons li:hover .shortgame-sub,
+    .navbar .nav-buttons .buttons li:hover .advanced-sub {
+        display: block;
+    }
+
+    nav .navbar .nav-buttons .buttons li {
+        display: block;
+    }
+
+    nav .navbar .buttons li .nav-arrow {
+        display: inline-block;
+        line-height: 40px;
+        transition: all 0.25s ease;
+    }
+
+    .navbar .nav-buttons .buttons li:hover .fundamentals-arrow,
+    .navbar .nav-buttons .buttons li:hover .short-game-arrow,
+    .navbar .nav-buttons .buttons li:hover .advanced-arrow {
+        transform: rotate(90deg);
+    }
+
+    .navbar .buttons li .sub-menu .swing-sub,
+    .navbar .buttons li .sub-menu .short-sub,
+    .navbar .buttons li .sub-menu .advcd-sub {
+        display: none;
+        position: relative;
+        left: 0;
+      }
+      
+    .navbar .buttons li .sub-menu .swing-sub li,
+    .navbar .buttons li .sub-menu .short-sub li,
+    .navbar .buttons li .sub-menu .advcd-sub li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .available {
+        flex-direction: column;
+    }
+
+    .available-title {
+        margin: auto !important;
+    }
+
+    .available-num {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .lesson-container {
+        flex-direction: column;
+    }
+
+    .grip-img {
+        width: 100% !important;
+        padding-left: 0 !important;
+    }
+
+    .golf-grip {
+        padding-left: 25px !important;
+    }
+
+    .learn-btn {
+        margin-left: 25px !important;
+    }
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.typed-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 50px;
+    color: #000000;
+    text-align: center;
+}
+
+.typed-title p span {
+    color: #37A1F7;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.available {
+    display: flex;
+    align-items: center;
+}
+
+.available-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 10px;
+    color: #000000;
+}
+
+.available-num {
+    margin-top: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #FFFFFF;
+    border-radius: 50%;
+    width: 36px;
+    line-height: 36px;
+    background: #37A1F7;
+    border: 2px solid #37A1F7;
+    text-align: center;
+}
+
+.lesson-container {
+    display: flex;
+}
+
+.grip {
+    flex: 1;
+}
+
+.grip a {
+    text-decoration: none;
+}
+
+.golf-grip {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #000000;
+    padding-left: 50px;
+}
+
+.golf-grip:hover {
+    color: #37A1F7;
+    text-decoration: underline;
+    transition: all 0.5s ease;
+}
+
+.grip-img {
+    width: 45%;
+    height: auto;
+    border-radius: 4px;
+    padding-left: 50px;
+}
+
+.learn-btn {
+    background-color: #FFFFFF;
+    border: 2px solid #37A1F7;
+    cursor: pointer;
+    padding: 12px 24px;
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #37A1F7;
+    border-radius: 6px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.learn-btn:hover {
+    background-color: #37A1F7;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    transition: all 0.6s ease;
+}
+
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #2C2D2D;
+    color: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+
+ .footer-note {
+     font-family: "Montserrat", sans-serif;
+     text-align: center;
+     line-height: 25px;
+ }
+
+ .contact {
+    color: inherit;
+ }
